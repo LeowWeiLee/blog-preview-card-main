@@ -3,6 +3,7 @@
 * {
   font-family: "Figtree", sans-serif;
   font-size: 16px;
+  margin: 6px;
 }
 body {
   display: flex;
@@ -21,12 +22,13 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  max-width: 330px;
   background-color: white;
   border-radius: 12px;
   padding: 15px;
   border: 1px solid black;
   box-shadow: 3px 3px #030301, 10px 10px #020403, 2px 2px #bda65a;
+  margin-top: 60px;
 }
 .card-image {
   border-radius: 12px;
