@@ -30,6 +30,8 @@ body {
 }
 .card-image {
   border-radius: 12px;
+  max-width: 100%;
+  height: auto;
 }
 .wrap {
   display: flex;
@@ -40,8 +42,8 @@ p.text-bold {
 }
 p.label-button {
   background-color: #f6ce53;
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 6px;
+  padding: 5px;
   max-width: fit-content;
 }
 p.title {
@@ -53,5 +55,12 @@ p.title:hover {
   cursor: pointer;
 }
 p.profile-name {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.profile-pic {
+  max-width: 12%;
+  height: auto;
+}
+p.body-text {
+  color: #a6a6a6;
 }
