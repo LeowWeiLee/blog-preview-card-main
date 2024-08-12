@@ -1,39 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+/*CSS RESET*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/*CSS RESET*/
 
 * {
   font-family: "Figtree", sans-serif;
-  font-size: 16px;
-  margin: 6px;
+  margin: 0.5rem;
 }
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100svh;
   background-color: #f5d04e;
-}
-.attribution {
-  margin-top: 20px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 330px;
+  max-width: 22rem;
   background-color: white;
-  border-radius: 12px;
-  padding: 15px;
+  border-radius: 0.5rem;
+  padding: 1rem;
   border: 1px solid black;
   box-shadow: 3px 3px #030301, 10px 10px #020403, 2px 2px #bda65a;
-  margin-top: 60px;
 }
 .card-image {
-  border-radius: 12px;
-  max-width: 100%;
-  height: auto;
+  border-radius: 0.5rem;
 }
 .wrap {
   display: flex;
@@ -44,25 +75,31 @@ p.text-bold {
 }
 p.label-button {
   background-color: #f6ce53;
-  border-radius: 6px;
-  padding: 5px;
-  max-width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  max-width: min-content;
 }
-p.title {
+h1 {
   font-weight: 1000;
   font-size: x-large;
 }
-p.title:hover {
+h1:hover {
   color: #f6ce53;
   cursor: pointer;
 }
 p.profile-name {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 .profile-pic {
-  max-width: 12%;
-  height: auto;
+  max-width: 15%;
 }
 p.body-text {
   color: #a6a6a6;
+}
+.attribution {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
